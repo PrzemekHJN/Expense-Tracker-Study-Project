@@ -14,7 +14,7 @@ namespace ExpenseTracker
 
             // DI
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseSqlServer(builder.Configuration.GetConnectionString("DevConnection")));
+            options.UseSqlServer(builder.Configuration.GetConnectionString("DatabaseConnection")));
 
 
             var app = builder.Build();
