@@ -19,17 +19,21 @@ html {
 }
 
 *:not(.fa-solid):not(.fa):not(.e-icons) {
-    font-family: "Inter";
+    font-family: "Inter"
 }
 
 body {
   margin-bottom: 60px;
-  background-color : black;
-  color: white;
+  background-color : #12161d;
+  color: #fff;
 }
 
 .e-bigger {
     font-size: x-large;
+}
+
+.main-content {
+    margin-left: 290px;
 }
 
 /*BreadCrumb*/
@@ -68,11 +72,27 @@ body {
         background-color: #222b33;
     }
 
-    /*.e-grid .e-gridheader .e-headercell {
+        .e-grid .e-gridheader .e-headercell {
+            background-color: #222b33;
+        }
 
+    .e-grid .e-gridpager {
+        background-color: #1a222b;
     }
 
-    */
+    .e-grid .e-pagercontainer {
+        border: none;
+        background-color: #1a222b;
+    }
+
+    .e-grid .e-content table {
+        padding: 0px 10px; 
+    }
+
+.e-pagercontainer .e-icons {
+    background-color: #1a222b;
+    border: none !important;
+}
 
 .e-pager .e-numericitem {
     color: #adb5bd;
@@ -88,7 +108,7 @@ body {
     }
 
     .e-pager .e-numericitem.e-currentitem {
-        color #fff;
+        color: #fff;
         border: none !important;
         background-color: #31373d;
     }
@@ -99,13 +119,18 @@ body {
     font-weight: bold;
 }
 
+.e-grid .e-pager {
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
 
 /*Radio button group*/
 .e-btn-group.custom-rbt-group {
     width: 100%;
 }
 
-    .e-btn-group.custom-rbt-group.e-btn {
+    .e-btn-group.custom-rbt-group .e-btn {
         width: 50%;
     }
 
@@ -120,6 +145,13 @@ body {
     background-color: #fff;
     color: #212b36;
     border: 1px solid #fff;
+}
+
+/*Sidebar*/
+#sidebar {
+    background-color: #12161d;
+    border-right: 1px dashed rgba(75, 82, 85, 0.24);
+    padding: 10px 20px;
 }
 
 /*Widget*/
