@@ -31,11 +31,11 @@ namespace ExpenseTracker.Controllers
                 .Sum(j => j.Amount);
             ViewBag.TotalIncome = TotalIncome.ToString("C2");
 
-            //Total Expense - change viev bag to expense?
+            //Total Expense
             int TotalExpense = SelectedTransactions
                 .Where(i => i.Category.Type == "Expense")
                 .Sum(j => j.Amount);
-            ViewBag.TotalIncome = TotalIncome.ToString("C2");
+            ViewBag.TotalExpense = TotalExpense.ToString("C2");
 
             //Balance
             int Balance = TotalIncome - TotalExpense;
