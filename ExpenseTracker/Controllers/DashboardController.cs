@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Drawing.Text;
+using System.Globalization;
 
 namespace ExpenseTracker.Controllers
 {
@@ -39,7 +40,22 @@ namespace ExpenseTracker.Controllers
 
             //Balance
             int Balance = TotalIncome - TotalExpense;
+            /* CultureInfo culture = CultureInfo.CreateSpecificCulture("en-US");
+            culture.NumberFormat.CurrencyNegativePattern = 1;
+            ViewBag.Balance = String.Format(culture, "{0:C2}", Balance); */
             ViewBag.Balance = Balance.ToString("C2");
+
+            // For donut chart - Expense by Category
+            ViewBag.DonutChartData = SelectedTransactions
+                .Where(i => i.Category.Type == "Expense")
+                .GroupBy(j => j.Category.CategoryId)
+                .Select(k => new
+                {
+                    categoryTitleWithIcon = k.First().Category.Icon + "" + k.First().Category.Title,
+                    amount = k.Sum(j => j.Amount),
+                    formattedAmount = k.Sum(j => j.Amount).ToString("C2"),
+                })
+                .ToList();
 
             return View();
         }
