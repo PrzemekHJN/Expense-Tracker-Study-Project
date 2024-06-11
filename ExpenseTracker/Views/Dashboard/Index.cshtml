@@ -55,10 +55,14 @@
              <ejs-accumulationchart id="donutchart" enableSmartLabels background="#1a222b">
                  <e-accumulation-series-collection>
                     <e-accumulation-series dataSource="@ViewBag.DonutChartData"
-                    xName="categoryTitleWithIcon" yName="amount" innerRadius="40%">
+                    xName="categoryTitleWithIcon" yName="amount" innerRadius="40%" legendshape="Rectangle">
                         <e-accumulationseries-datalabel name="formattedAmount" visible="true"></e-accumulationseries-datalabel>
                     </e-accumulation-series>
                  </e-accumulation-series-collection>
+                 <e-accumulationchart-legendsettings position="Top" toggleVisibility="false">
+                     <e-legendsettings-textstyle color="#fff" size="1rem"></e-legendsettings-textstyle>
+                 </e-accumulationchart-legendsettings>
+                 <e-accumulationchart-tooltipsettings enable></e-accumulationchart-tooltipsettings>
              </ejs-accumulationchart>
         </div>
     </div>
