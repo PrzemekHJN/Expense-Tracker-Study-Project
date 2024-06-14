@@ -16,6 +16,7 @@ namespace ExpenseTracker
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("DatabaseConnection")));
 
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Mgo+DSMBMAY9C3t2UFhhQlJBfV5AQmBIYVp/TGpJfl96cVxMZVVBJAtUQF1hTX5Vd0FiWXtWcHNcQGNa");
 
             var app = builder.Build();
 
