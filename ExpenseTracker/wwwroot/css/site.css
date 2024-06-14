@@ -125,6 +125,15 @@ body {
     border-bottom-right-radius: 5px;
 }
 
+/*Menu*/
+#menu {
+    width: 100% !important;
+    background-color: inherit;
+    overflow: hidden;
+}
+
+    
+
 /*Nav bar*/
 nav.navbar {
     background-color: rgba(18,22,29);
@@ -142,6 +151,13 @@ nav.navbar {
             background-color: #48545f14;
             transform: scale(1.05) translateZ(0px);
         }
+
+/*Profile pic style*/
+img.profile-pic {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
 
 /*Radio button group*/
 .e-btn-group.custom-rbt-group {
