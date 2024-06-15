@@ -52,9 +52,22 @@
     });
 }
 
-
-<ejs-sidebar id="sidebar" width="290px">
+<ejs-sidebar id="sidebar" width="295px" enableDock>
     <e-content-template>
+        <div class="logo-wrapper">
+            <div class="app-logo">
+                <img src="~/purse50.png" />
+            </div>
+            <div class="w-100"></div>
+            <i id="sidebar-toggler" class="fa-solid fa-arrows-turn-to-dots"></i>
+        </div>
+        <div class="profile-wrapper">
+            <img class="profile-pic" src="~/testprofilephoto.png" />
+            <div class="titles d-flex flex-column ps-3">
+                <h6 class="mb-0">Expense Tracker</h6>
+                <span class="text-muted">Na PdIwT ASP.NET</span>
+            </div>
+        </div>
         <ejs-menu id="menu" items="menuItems"
         orientation="Vertical" hamburgerMode></ejs-menu>
     </e-content-template>

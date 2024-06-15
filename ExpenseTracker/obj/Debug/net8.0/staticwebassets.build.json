@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Vygr8IinCdf7sJj9XLTHCp3x2o1Er8S2wkjqmu4hnik=",
+  "Hash": "G7HhyqkvImvWMdAPfdzzyYrZa+su65Ziuv1pTN64Dqg=",
   "Source": "ExpenseTracker",
   "BasePath": "_content/ExpenseTracker",
   "Mode": "Default",
@@ -1269,6 +1269,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\ExpenseTracker\\ExpenseTracker\\wwwroot\\purse50.png",
+      "SourceId": "ExpenseTracker",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\ExpenseTracker\\ExpenseTracker\\wwwroot\\",
+      "BasePath": "_content/ExpenseTracker",
+      "RelativePath": "purse50.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\purse50.png"
     },
     {
       "Identity": "C:\\Users\\User\\Desktop\\ExpenseTracker\\ExpenseTracker\\wwwroot\\testprofilephoto.png",

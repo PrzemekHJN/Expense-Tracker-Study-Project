@@ -125,6 +125,18 @@ body {
     border-bottom-right-radius: 5px;
 }
 
+/*Logo*/
+.logo-wrapper {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.app-logo {
+    padding: 10px 10px;
+}
+
 /*Menu*/
 #menu {
     width: 100% !important;
@@ -195,6 +207,21 @@ img.profile-pic {
     border-radius: 50%;
 }
 
+.profile-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(72, 84, 95, 0.12);
+    padding: 16px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+    .profile-wrapper .titles {
+        line-height: 1;
+    }
+
 /*Radio button group*/
 .e-btn-group.custom-rbt-group {
     width: 100%;
@@ -223,6 +250,25 @@ img.profile-pic {
     border-right: 1px dashed rgba(75, 82, 85, 0.24);
     padding: 10px 20px;
 }
+
+    #sidebar .e-menu-wrapper {
+        width: 100%;
+        background-color: inherit;
+    }
+
+/*Sidebar toggler*/
+#sidebar-toggler {
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+    
+    #sidebar-toggler:hover {
+        cursor: pointer;
+        background-color: #48545f14;
+        transform: scale(1.20) translateZ(0px); 
+    }
 
 /*Widget*/
 .widget {
