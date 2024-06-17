@@ -52,14 +52,14 @@
     });
 }
 
-<ejs-sidebar id="sidebar" width="295px" enableDock>
+<ejs-sidebar id="sidebar" width="290px" enableDock dockSize="100px" target=".dock-target" enableGestures="false">
     <e-content-template>
         <div class="logo-wrapper">
             <div class="app-logo">
                 <img src="~/purse50.png" />
             </div>
             <div class="w-100"></div>
-            <i id="sidebar-toggler" class="fa-solid fa-arrows-turn-to-dots"></i>
+            <i id="sidebar-toggler" class="fa-solid"></i>
         </div>
         <div class="profile-wrapper">
             <img class="profile-pic" src="~/testprofilephoto.png" />
@@ -72,3 +72,12 @@
         orientation="Vertical" hamburgerMode></ejs-menu>
     </e-content-template>
 </ejs-sidebar>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        dockBar = document.getElementById('sidebar').ej2_instances[0];
+        document.getElementById('sidebar-toggler').onclick = function () {
+            dockBar.toggle();
+        };
+    });
+</script>
